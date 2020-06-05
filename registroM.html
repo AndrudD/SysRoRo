@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Mascota | RoRo</title>
+    <link rel="stylesheet" href="css/mascotaStyle.css">
+  </head>
+ <body>
+
+<fieldset>
+  <div class="container2">
+  <div class="vertical-menu">
+    <a class="active2">Menu</a>
+    <a href="menu.html">Inicio</a>
+    <a href="registroD.html" class="active">Registro</a>
+     <a href="agendarC.html">Agendar</a>
+    <a href="consulta.html">Dar Consulta</a>
+    <a href="historialmedico.php">Historial Medico</a>
+    <a href="ConsultarC.php">Buscar</a>
+  </div>
+</div>
+</fieldset>
+
+<fieldset>
+    <div class="container">
+      <img src="img/mascota.png" class="avatar" alt="Avatar Image">
+      <h1>Registro Mascota</h1>
+      <form action="registroM.php" method="post"  enctype="multipart/form-data">
+        <fieldset class="containerm1"> 
+        <label for="name">Nombre</label>
+        <input type="txt1" placeholder="" name="nombreM" >
+        <label for="fnac">Nacimiento</label>
+        <input type="date" name="DATE" >
+        <label for="especie">Especie</label>
+        <input type="txt2" placeholder="" name="especie" >
+        <label for="raza">Raza</label>
+        <input type="txt2" placeholder="" name="raza" >
+        <label for="txtnotas">Notas Mascota:</label>
+        <textarea id="txtnotas" rows="6" cols="38" name="detallesMascota" >
+        </textarea>
+        </fieldset>
+
+        <fieldset class="containerm2">
+        <label for="sexo">Sexo</label>
+        <input type="txt2" placeholder="" name="sexo" >
+        <label for="colorm">Color</label>
+        <input type="txt2" placeholder="" name="color" >
+        <label for="identificacion">Identificacion</label>
+        <input type="txt2" placeholder="" name="identificacion">
+        <label for="prop1">Propietario</label>
+        <input type="txt2" placeholder="" name="nombreP" >
+        <label for="fotom">Foto Mascota</label>
+        <br>
+        <img id="uploadPreview1" width="100" height="100" src="img/image_not_available.jpg">
+        <input id="uploadImage1" type="file" name="image" onchange="previewImage(1);">          
+        </fieldset>
+      <div class="w3-bar">
+      <input type="submit" name="Registrar" value="Registrar">
+    </div>
+</div>
+</fieldset>
+
+    <fieldset>
+  <div class="container3">
+  <div class="vertical-menu">
+    <a  class="active2">Menu Registro</a>
+    <a href="registroD.html">Registro Propietario</a>
+    <a href="registroM.html" class="active">Registro Mascota</a>
+  </div>
+</div>
+</fieldset>
+</form>
+    <script type="text/javascript">
+      function previewImage(nb) {        
+    var reader = new FileReader();         
+    reader.readAsDataURL(document.getElementById('uploadImage'+nb).files[0]);         
+    reader.onload = function (e) {             
+        document.getElementById('uploadPreview'+nb).src = e.target.result;         
+    };     
+}
+    </script>
+  </body>
+</html>
