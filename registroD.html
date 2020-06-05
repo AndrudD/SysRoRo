@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Propietario | RoRo</title>
+    <link rel="stylesheet" href="css/dueñoStyle.css">
+  </head>
+ <body>
+  <fieldset>
+  <div class="container2">
+  <div class="vertical-menu">
+    <a class="active2">Menu</a>
+    <a href="menu.html">Inicio</a>
+    <a href="registroD.html" class="active">Registro</a>
+     <a href="agendarC.html">Agendar</a>
+    <a href="consulta.html">Dar Consulta</a>
+    <a href="historialmedico.php">Historial Medico</a>
+    <a href="ConsultarC.php">Buscar</a>
+  </div>
+</div>
+</fieldset>
+    
+<fieldset>
+    <div class="container">
+      <img src="img/dueño.png" class="avatar" alt="Avatar Image">
+      <h1>Registro Propietario</h1>
+      <form action="registroD.php" method="post"  enctype="multipart/form-data">
+        <fieldset class="containerm1">
+        <label for="dueño">Propietario / Responsable</label>
+        <input type="txt1" id="nombreP" name="nombreP" placeholder="" required="">
+        <label for="direccion">Direccion</label>
+        <input type="txt1" id="direccionP" name="direccionP" placeholder="" required="">
+        <label for="tel">Telefono</label>
+        <input type="txt2" id="telP" name="telP" placeholder="" required="">
+        </fieldset>
+        
+        <fieldset class="containerm2">
+        <label for="ine">N° INE</label>
+        <input type="txt2" id="ineP" name="ineP" placeholder="" required="">
+        <label for="fotom">Foto Propietario</label>
+        <img id="uploadPreview1" width="100" height="100" src="img/image_not_available.jpg">
+        <input id="uploadImage1" type="file" name="image" onchange="previewImage(1);">
+        
+        </fieldset>
+      
+      <div class="w3-bar">
+      <input type="submit" name="Registrar" value="Registrar">
+    </div>
+  </div>
+</fieldset>
+
+ <fieldset>
+  <div class="container3">
+  <div class="vertical-menu">
+    <a  class="active2">Menu Registro</a>
+    <a href="registroD.html" class="active">Registro Propietario</a>
+    <a href="registroM.html">Registro Mascota</a>
+  </div>
+</div>
+</fieldset>
+</form>
+
+
+     <script type="text/javascript">
+      function previewImage(nb) {        
+    var reader = new FileReader();         
+    reader.readAsDataURL(document.getElementById('uploadImage'+nb).files[0]);         
+    reader.onload = function (e) {             
+        document.getElementById('uploadPreview'+nb).src = e.target.result;         
+    };     
+}
+    </script>
+  </body>
+</html>
