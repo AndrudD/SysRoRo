@@ -1,0 +1,90 @@
+body {
+  font-family: 'Consolas';
+  font-size: 18px;
+  background-image: url(../img/fondo3.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+}
+fieldset{
+  float: left;
+  width: 35%;
+  border:none;
+ 
+}
+
+.container{
+padding-left: 15%;
+padding-top: 0%;
+transform: translate(12%, 30%);
+background-color: transparent;
+height: 200px;
+
+}
+
+
+.vertical-menu {
+  width: 150px;
+  height: 200px;
+  
+}
+
+.vertical-menu a {
+  background-color: transparent;
+  color: #000;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 10%;
+  padding: 10px;
+
+}
+
+.vertical-menu a:hover {
+  background-color: #bc804e;
+}
+
+.vertical-menu a.active {
+  background-color: #966339;
+  color: white;
+}
+.vertical-menu a.active2 {
+  background-color: #6b4729;
+  color: white;
+}
+
+
+form{
+  width: 650px;
+  height: 720px;
+  background-color: transparent;
+  text-align: center;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 10px;
+
+}
+
+a {
+  
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 15px 15px;
+  background: #966339 ;
+  color: #000;
+  font-size: 18px;
+  border-radius: 20px;
+}
+a:hover {
+  cursor: pointer;
+  background: #bc804e ;
+  color: #000;
+}
