@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar | RoRo</title>
+    <link rel="stylesheet" href="css/agendarCStyle.css">
+   </head>
+ <body>
+
+    <fieldset>
+        <div class="container2">
+            <div class="vertical-menu">
+                <a class="active2">Menu</a>
+                <a href="menu.html">Inicio</a>
+                <a href="registroD.html">Registro</a>
+                <a href="agendarC.html" class="active">Agendar</a>
+                <a href="consulta.html">Dar Consulta</a>
+                <a href="historialmedico.php">Historial Medico</a>
+                <a href="ConsultarC.php">Buscar</a>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+    <div class="container">
+      <img src="img/agendar.png" class="avatar" alt="Avatar Image">
+      <h1>Agendar Consulta</h1>
+
+      <form action="agendarC.php" method="post" >
+        <fieldset class="containerm1"> 
+        <label for="name">Nombre Propietario</label>
+        <input type="txt1" name="nombreP" placeholder="" required>
+        <label for="direccion">Direccion</label>
+        <input type="txt1"  name="domicilio" placeholder="">
+        <label for="tel">Telefono</label>
+        <input type="txt2" name="telefono" placeholder="" required>
+        <label for="fnac">Fecha de consulta</label>
+        <input type="date" id="dateA" name="DATE" required>
+        
+        <label for="txtnotas">Referencia Domicilio:</label>
+        <textarea id="txtnotas" name="Referencia" rows="4" cols="35" >
+        </textarea>    
+        </fieldset>
+
+
+        <fieldset class="containerm2">
+        <label for="tipoconsulta">Tipo de Consulta</label>
+        <select name="select" class="tipoC">  
+        <option value="Domiciliada">Domiciliada</option> 
+        <option value="Consultorio" selected>Consultorio</option>
+        </select>
+        <br><br>
+        <label for="name">Nombre Mascota</label>
+        <input type="txt1" name="nombreM" placeholder="" required>
+        <label for="especie">Especie</label>
+        <input type="txt2" name="especie" placeholder="" required>
+        <label for="raza">Raza</label>
+        <input type="txt2" name="raza" placeholder="" required>
+        <label for="txtnotas">Notas Mascota:</label>
+        <textarea id="txtnotas" name="detalles" rows="4" cols="35" >
+        </textarea>       
+        </fieldset>
+        
+       <input type="submit" name="Agendar" value="Agendar">
+       <input type="reset" value="Limpiar">
+
+       
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="container3">
+          <div class="vertical-menu">
+            <a  class="active2">Menu Agendar</a>
+            <a href="agendarC.html" class="active">Agendar Consulta</a>
+            <a href="agendarE.html">Agendar Estetica</a>
+            <a href="agendarCI.html">Ingreso Hospitalario</a>
+          </div>
+        </div>
+    </fieldset>
+
+</form>
+
+  </body>
+</html>
