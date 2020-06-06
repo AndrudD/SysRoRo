@@ -1,0 +1,168 @@
+
+body {
+  font-family: 'Consolas';
+  font-size: 18px;
+  background-image: url(../img/fondo3.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+}
+
+
+fieldset .containerm1, .containerm2, .containerm3{
+  float: left;
+  width: 28%;
+  border:none;
+
+}
+
+
+fieldset{
+  float: left;
+  width: 35%;
+  border:none;
+ 
+}
+.container2{
+padding-left: 15%;
+padding-top: 0%;
+transform: translate(12%, 30%);
+background-color: transparent;
+height: 200px;
+
+}
+.container3{
+padding-left: 15%;
+padding-top: 0%;
+transform: translate(99%, 30%);
+background-color: transparent;
+height: 200px;
+
+}
+
+
+.vertical-menu {
+  width: 150px;
+  height: 200px;
+  
+}
+
+.vertical-menu a {
+  background-color: transparent;
+  color: #000;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 10%;
+  padding: 10px;
+
+}
+
+.vertical-menu a:hover {
+  background-color: #bc804e;
+}
+
+.vertical-menu a.active {
+  background-color: #966339;
+  color: white;
+}
+.vertical-menu a.active2 {
+  background-color: #6b4729;
+  color: white;
+}
+
+.container {
+  width: 700px;
+  height: 500px;
+  background:transparent;
+  color: #000000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 15%;
+
+}
+
+.container .avatar {
+  width: 200px;
+  height: 120px;
+  background: transparent;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.container h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.container label {
+  margin: 0;
+  font-weight: bold;
+  display:inline-block;
+}
+
+.container input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.container input[type="text"],.container input[type="txt1"],.container input[type="file"],.container input[type="txt2"],.container input[type="date"]{
+  border: none;
+  border-bottom: 1px solid #000000;
+  background: transparent;
+  outline: none;
+  height: 20px;
+  color: #000000;
+  font-size: 16px;
+  padding: 1px 1px;
+}
+
+.boton{
+  text-align:center;
+}
+input[type="reset"] {
+ border: none;
+  outline: none;
+  height: 40px;
+  background: #6b4729;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+
+ 
+  }
+
+
+ input[type="reset"]:hover {
+  cursor: pointer;
+  background: #966339;
+  color: #000;
+}
+
+
+ input[type="submit"] {
+   border: none;
+  outline: none;
+  background: #6b4729;
+  color: #000;
+  font-size: 18px;
+  border-radius: 20px;
+ text-decoration: none;
+ padding: 10px 10px;
+}
+
+input[type="submit"]:hover {
+   cursor: pointer;
+  background: #966339;
+  color: #000;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Medica| RoRo</title>
+    <link rel="stylesheet" href="css/consultaStyle.css">
+  </head>
+ <body>
+
+    <fieldset>
+        <div class="container2">
+            <div class="vertical-menu">
+                <a class="active2">Menu</a>
+                <a href="menu.html">Inicio</a>
+                <a href="registroD.html">Registro</a>
+                <a href="agendarC.html">Agendar</a>
+                <a href="consulta.html" class="active">Dar Consulta</a>
+                <a href="historialmedico.php">Historial Medico</a>
+                <a href="ConsultarC.php">Buscar</a>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+
+    <div class="container">
+      <img src="img/logo2.png" class="avatar" alt="Avatar Image">
+      <h1>Consulta Medica | Recetario</h1>
+      <form action="consulta.php" method="post">
+
+
+        <fieldset class="containerm1"> 
+        <label for="nombreM">Nombre</label>
+        <input type="txt1" placeholder="" name="mascota" required="">
+
+        <label for="raza">Raza</label>
+        <input type="txt2" placeholder="" name="raza" required="">  
+        </fieldset>
+
+        <fieldset class="containerm2">
+        <label for="sexoM">Sexo</label>
+        <input type="txt1" placeholder="" name="sexo" required="">
+
+        <label for="tempM">Temperatura</label>
+        <input type="txt2" placeholder="" name="temperatura" required="">    
+        </fieldset>
+
+        <fieldset class="containerm3">
+        <label for="fnac">Fecha de consulta</label>
+        <input type="date" id="dateA" name="DATE" required>
+        
+        <label for="pesoM">Peso</label>
+        <input type="txt2" placeholder="" name="peso" required="">      
+        </fieldset>
+        
+        <fieldset>
+            <label>Nombre Propietario</label>
+        <input type="txt1" name="nombrePRO" required="">
+        </fieldset>
+
+        <fieldset>
+        <label for="obsM">Diagnostico</label>
+        <textarea id="txtOBS" rows="4" cols="80" name="diagnostico" required=""></textarea>
+
+      <label for="indM">Indicaciones</label>
+        <textarea id="txtdes" rows="6" cols="80" name="indicaciones" required="">
+        </textarea>
+        <br><br>
+    </fieldset>
+        <div class="boton">
+    
+      <input type="submit" name="Registrar" value="Registrar | Descargar">
+      <input type="reset" value="Limpiar">
+      </div>
+    </div>
+</fieldset>
+</form>
+
+  </body>
+</html>
