@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar | RoRo</title>
+    <link rel="stylesheet" href="css/agendarEStyle.css">
+  </head>
+ <body>
+
+  
+    <fieldset>
+        <div class="container2">
+
+            <div class="vertical-menu">
+                <a class="active2">Menu</a>
+                <a href="menu.html">Inicio</a>
+                <a href="registroD.html">Registro</a>
+                <a href="agendarC.html" class="active">Agendar</a>
+                <a href="consulta.html">Dar Consulta</a>
+                <a href="historialmedico.php">Historial Medico</a>
+                <a href="ConsultarC.php">Buscar</a>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+    <div class="container">
+        <img src="img/agendar.png" class="avatar" alt="Avatar Image">
+      <h1>Agendar Estetica</h1>
+      <form action="agendarE.php" method="post" >
+        <fieldset class="containerm1"> 
+        <label for="name">Nombre Propietario</label>
+        <input type="txt1" placeholder="" name="nombreP" required>
+        <label for="tel">Telefono</label>
+        <input type="txt2" placeholder="" name="telefono" required>
+        <label for="fecha">Fecha de Estetica</label>
+        <input type="date" id="dateA" name="DATE" required>
+
+        <label for="fecha">Hora de Entrada</label>
+        <input type="time" id="timeEntrada" name="timeEntrada" required>
+        <label for="fecha">Hora de Entrega</label>
+        <input type="time" id="timeEntrega" name="timeEntrega" required>
+        </fieldset>
+
+        <fieldset class="containerm2">
+        <label for="tipoconsulta">Tipo de Servicio</label>
+        <select name="select" class="tipoS">  
+        <option value="Completo">Completo</option> 
+        <option value="Estetica" selected>Estetica</option>
+        <option value="Baño" selected>Baño</option>
+        </select>
+        <br><br>
+
+        <label for="name">Nombre Mascota</label>
+        <input type="txt1" placeholder="" name="nombreM" required>
+        <label for="especie">Especie</label>
+        <input type="txt2" placeholder="" name="especie" required>
+        <label for="raza">Raza</label>
+        <input type="txt2" placeholder="" name="raza" required>
+        <label for="txtnotas">Notas Mascota:</label>
+        <textarea id="txtnotas" rows="3" cols="35" name="detalles">
+        </textarea>        
+        </fieldset>
+
+        <input type="submit"  name="Agendar" value="Agendar">
+        <input type="reset" value="Limpiar">
+
+    </div>
+</fieldset>
+    <fieldset>
+        <div class="container3">
+          <div class="vertical-menu">
+            <a  class="active2">Menu Agendar</a>
+            <a href="agendarC.html">Agendar Consulta</a>
+            <a href="agendarE.html" class="active">Agendar Estetica</a>
+            <a href="agendarCI.html">Ingreso Hospitalario</a>
+          </div>
+        </div>
+    </fieldset>
+</form>
+
+
+
+  </body>
+</html>
