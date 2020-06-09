@@ -1,15 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "roro";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-//Checking connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+include 'cn.php';
 
 ?>
 
@@ -26,7 +16,7 @@ if ($conn->connect_error) {
     <fieldset >
         <div class="container2">
             <div class="vertical-menu">
-            <a href="menu.html" >Volver a Menu</a>
+            <a href="menu.php" >Volver a Menu</a>
             <a class="active2">Menu Buscar</a>
             <a href="ConsultarC.php" class="active">Consultas Agendadas</a>
             <a href="ConsultarE.php">Esteticas Agendadas</a>

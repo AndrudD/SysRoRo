@@ -1,3 +1,6 @@
+<?php
+include 'session_start.php';
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,7 +14,7 @@
 	<div class="container">
 	<div class="vertical-menu">
 	<a class="active2">Menu</a>
-	  <a href="menu.html" class="active">Inicio</a>
+	  <a href="menu.php" class="active">Inicio</a>
 	  <a href="registroD.html">Registro</a>
 	  <a href="agendarC.html">Agendar</a>
 	  <a href="consulta.html">Dar Consulta</a>
@@ -24,9 +27,9 @@
 		<div>
 			<form>
 			<h1>Bienvenido</h1>
-			<img src="logo2.png" height="300" width="400">
+			<img src="img/logo2.png" height="300" width="400">
 			<br><br>
-	  		<a href="index.html">Salir</a>
+	  		<a href="session_close.php">Salir</a>
 			</form>
 		</div>
 	</fieldset>
