@@ -1,6 +1,7 @@
 <?php
 include 'session_start.php';
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,9 +21,13 @@ include 'session_start.php';
 	  <a href="consulta.html">Dar Consulta</a>
 	  <a href="historialmedico.php">Historial Medico</a>
 	  <a href="ConsultarC.php">Buscar</a>
+	  <a class="active2">Modificar</a>
+	 <a href="actualizarCliente.html">Actualizar Datos</a>
 	</div>
 	</div>
 	</fieldset>
+
+
 	<fieldset>
 		<div>
 			<form>
@@ -33,6 +38,7 @@ include 'session_start.php';
 			</form>
 		</div>
 	</fieldset>
+
 	
 	
 

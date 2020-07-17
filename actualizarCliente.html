@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Propietario | RoRo</title>
+    <link rel="stylesheet" href="css/actualizarCliente.css">
+  </head>
+ <body>
+  <fieldset>
+  <div class="container2">
+  <div class="vertical-menu">
+     <a href="menu.php">Volver Inicio</a>
+    <a class="active2">Modificar</a>
+    <a class="active" href="actualizarCliente.html">Actualizar Propietario</a>
+    <a href="actualizarMascota.html">Actualizar Mascota</a>
+
+</div>
+</fieldset>
+    
+<fieldset>
+    <div class="container">
+      <h1>Actualizacion Propietario</h1>
+      <form action="actualizarCliente.php" method="post"  enctype="multipart/form-data">
+
+        <fieldset class="containerm1">
+
+        <label for="ine">N° INE</label>
+        <input type="txt2" id="ineP" name="ineP" placeholder="" required="">
+        <label for="dueño">Propietario / Responsable</label>
+        <input type="txt1" id="nombreP" name="nombreP" placeholder="" required="">
+        <label for="direccion">Direccion</label>
+        <input type="txt1" id="direccionP" name="direccionP" placeholder="" required="">
+        <label for="tel">Telefono</label>
+        <input type="txt2" id="telP" name="telP" placeholder="" required="">
+      </fieldset>
+
+       <fieldset class="containerm2">
+        <label for="fotom">Foto Propietario</label>
+        <img id="uploadPreview1" width="100" height="100" src="img/image_not_available.jpg">
+        <input id="uploadImage1" type="file" name="image" onchange="previewImage(1);">
+
+    
+        </fieldset>
+
+      
+      <div class="w3-bar">
+      <input type="submit" name="Actualizar" value="Actualizar">
+    </div>
+  </div>
+</fieldset>
+
+
+</form>
+
+
+     <script type="text/javascript">
+      function previewImage(nb) {        
+    var reader = new FileReader();         
+    reader.readAsDataURL(document.getElementById('uploadImage'+nb).files[0]);         
+    reader.onload = function (e) {             
+        document.getElementById('uploadPreview'+nb).src = e.target.result;         
+    };     
+}
+    </script>
+  </body>
+</html>
